@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <title>Questionnaire Form</title>
+</head>
+<body>
+  <header>
+    <a class="header-brand">Forms</a>
+    <nav>
+      <ul>
+        <li><a href="questionnaire.html">Questionnaire</a></li>
+        <li><a href="#">Form1-Grey</a></li>
+        <li><a href="#">Form2-Pink</a></li>
+        <li><a href="#">Form3-Flower</a></li>
+        <li><a href="#">Form4-Invintation</a></li>
+        <li><a href="#">Form5-Log-In</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="form">
+      <div class="content">
+      <form action="form-succes.html">
+        <keygen keytype="rsa" name="PublicKeyRSA" id="keygen" title="keygen" form="MyForm">
+        <fieldset>
+          <legend>Обов'язково для заповнення*</legend>
+          <div class="fieldset-necessarily">
+            <div class="first-last_name">
+              <label for="">Name Surname</label>
+              <input list="name-sur" lang="uk" type="text" placeholder="Галяс Андрій" pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,20}{2,50}" minlength="8" maxlength="35" required autofocus valid>
+              <datalist id="name-sur">
+                <option>Andriy Galias</option>
+              </datalist>
+            </div>
+            <div class="email">
+              <label for="">E-mail</label>
+              <input list="email" autocomplete="off" placeholder="galiasandrii@gmail.com" type="email" minlength="11" maxlength="40" required>
+              <datalist id="email">
+                <option>galiasandrii@gmail.com</option>
+              </datalist>
+            </div>
+            <div>
+              <label for="pwd">Password</label>
+              <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="6" maxlength="16" required>
+            </div>
+            <div class="tel">
+              <label for="">Phone number (ukrainian number)</label>
+              <input list="tel-num" type="tel" pattern="[0-9]{10}" minlength="10" maxlength="10" placeholder="0663603956" required>
+              <datalist id="tel-num">
+                <option>0663603956</option>
+              </datalist>
+            </div>
+            <div class="form-date">
+              <label for="birthday">Date of birth</label>
+              <input min="1920-04-20" max="2008-07-23" type="date" id="birthday" name="birthday" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Необов'язково до заповнення*</legend>
+          <div class="fieldset-optinal">
+            <div class="fav-color">
+              <label for="favcolor">Select your favorite color:</label>
+              <input type="color" id="favcolor" name="favcolor">
+            </div>
+            <div class="form-range">
+              <label for="">Range</label>
+              <input type="range">
+            </div>
+            <div class="form-number">
+              <label for="">Number</label>
+              <input type="number">
+            </div>
+            <div class="form-search">
+              <label for="">Search</label>
+              <input type="search" name="gsearch" placeholder="Search info...">
+            </div>
+            <div class="form-url">
+              <label for="">Url</label>
+              <input type="url" placeholder="https://www.survio.com/ru/">
+            </div>
+            <div class="form-progress">
+              <label for="">Progress</label>
+              <progress value="50" max="100"></progress>
+            </div>
+            <div class="form-meter">
+              <label for="">Meter</label>
+              <meter min="15" middle="55" max="90" value="60"></meter>
+            </div>
+            <div class="form-datetime">
+              <label for="">Datetime</label>
+              <input type="datetime">
+            </div>
+            <div class="form-month">
+              <label for="">Month</label>
+              <input type="month">
+            </div>
+            <div class="form-week">
+              <label for="">Week</label>
+              <input type="week">
+            </div>
+            <div class="form-time">
+              <label for="">Time</label>
+              <input type="time">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Запитання</legend>
+          <div class="questions-block">
+            <ol >
+              <li><label for="">У Вас є домашня тварина? Якщо так, то яка?</label>
+                <input placeholder="Так, собака" list="pets" type="text">
+                <datalist id="pets">
+                  <option>Так, </option>
+                  <option>Ні</option>
+                </datalist>
+              </li>
+              <li><label for="">Ваша улюблена тварина?</label> <input placeholder="Інша, черепаха" list="fav-pets" type="text">
+                <datalist id="fav-pets">
+                  <option>Собака</option>
+                  <option>Папуга</option>
+                  <option>Кіт</option>
+                  <option>Хомяк</option>
+                  <option>Інша, </option>
+                </datalist>
+              </li>
+              <li><label for="">Яким домашнім улюбленцем Ви б у майбутньому хотіли обзавестися?</label> <input type="text" placeholder="Папуга" required></li>
+              <li><label for="">Яким домашнім улюбленцем Ви б ніколи не обзавелись?</label> <input type="text" required></li>
+              <li><label for="">Яка порода собак Ваша улюблена?</label>
+                 <input list="dog-type" type="text" required>
+                 <datalist id="dog-type">
+                   <option>Стаффорд</option>
+                   <option>Чіхуахуа</option>
+                   <option>Йоркширський-тер'єр</option>
+                   <option>Німецька вівчарка</option>
+                   <option>Лайка</option>
+                   <option>Інша,</option>
+                 </datalist>
+               </li>
+              <li><label for="">Вирішуючи питання обзавестися домашнім улюбленцем, ви обговорюєте:</label>
+                <input placeholder="Характер улюбленця" list="difficultw8pets" type="text" required>
+                <datalist id="difficultw8pets">
+                  <option>Складності в догляді за улюбленцем</option>
+                  <option>Витрати на догляд за ним</option>
+                  <option>Характер улюбленця</option>
+                  <option>Ціну улюбленця</option>
+                  <option>Безпека улюбленця</option>
+                  <option>Інші речі (вкажіть)</option>
+                </datalist>
+              </li>
+              <li><label for="">Чи ви колись були в притулку для тварин? Якщо так, опишіть коротко свої враження</label> <input type="text" required></li>
+              <br>
+              <label for="">Textarea</label>
+              <textarea name="name" spellcheck="false" maxlength="64" rows="2" cols="50"></textarea>
+            </ol>
+          </div>
+        </fieldset>
+        <div class="btn-send">
+          <input type="submit" value="Відправити форму" class="send-form">
+          <input type="reset" class="reset-form" value="Очистити">
+        </div>
+      </form>
+
+      </div>
+      <div class="container-social-media">
+        <div>
+          <p class="sign-as">Зайти як користувач</p>
+          <social>
+            <button type="button" class="btn-social btn-facebook btn">
+              <img style="margin-right: 12px;" width="18" height="18" src="img/facebook.png" alt="facebook">
+              Facebook
+            </button>
+            <button style="margin-top: 16px;" type="button" class="btn-social btn-facebook btn">
+              <img style="margin-right: 12px;" width="18" height="18" src="img/google.png" alt="facebook">
+              Google
+            </button>
+          </social>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

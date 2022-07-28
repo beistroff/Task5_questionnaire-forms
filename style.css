@@ -1,0 +1,284 @@
+/*MY CODE*/
+
+* {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 100px;
+}
+}
+header {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+@media only screen and (min-width: 1000px){
+header .header-brand {
+  font-family: Catamaran;
+  font-size: 30px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+  }
+}
+
+header nav ul{
+  display: block;
+  margin: 0 auto;
+  margin: 20px 0px 0px 0px;
+  float: left;
+}
+
+header nav ul li{
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 12px;
+}
+header nav ul li a{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #111;
+  text-transform:uppercase;
+}
+
+header .header-cases {
+  display: none;
+}
+
+header .header-brand {
+  margin: 31px 0;
+  font-family: Catamaran;
+  text-align: left;
+  padding: 0px 0px 0px 30px;
+  float: left;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #111;
+}
+header nav ul li a{
+    line-height: 60px;
+}
+
+/*----------------------FORM------------------------------------*/
+
+@media only screen and (min-width: 768px){
+  .form{
+    margin-top: 20px;
+    top: 0;
+    left: 25%;
+    max-height: 100%;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 40px #00000052;
+    width: 100%;
+    height: auto;
+    border: 1px solid #eeeeee;
+    overflow: hidden;
+    border-radius: 8px;
+    max-width: 700px;
+    margin-bottom: 40px;
+  }
+
+  .content{
+    justify-content: center;
+    padding: 26px 26px 26px 26px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e9e9;
+  }
+}
+.fieldset-necessarily label {
+  display: flex;
+  font-family: 'Catamaran', system-ui;
+  font-size: 17px;
+}
+.fieldset-optinal label {
+  display: flex;
+  font-family: 'Catamaran', system-ui;
+  font-size: 17px;
+}
+
+legend{
+  font-family: Catamaran;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(148, 39, 198);
+}
+input[type=text], input[type=email], input[type=password], input[type=tel],
+input[type=date] {
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #111;
+  font-size: 15px;
+  padding-left: 7px;
+}
+input{
+  padding-left: 7px;
+  border-radius: 5px;
+  border: 1px solid #111;
+}
+fieldset{
+  margin-bottom: 20px;
+  width: 480px;
+}
+fieldset label {
+  margin-top: 5px;
+}
+
+.fieldset-necessarily{
+  padding: 5px 15px 20px 15px;
+}
+.fieldset-optinal{
+  padding: 5px 15px 20px 15px;
+}
+
+.fieldset-necessarily input:valid {
+  background-color: rgb(231, 239, 245);
+}
+.fieldset-necessarily input:invalid {
+  background-color: rgb(247, 242, 241);
+}
+
+.questions-block ol li label:first-child{
+  display: flex;
+}
+
+.questions-block label {
+  font-family: 'Catamaran', system-ui;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.btn-send {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn-send input{
+  margin: 5px 7px 0 0px;
+}
+.send-form {
+  text-align: center;
+  border: none;
+  font-family: 'Catamaran';
+  color: #fff;
+  background: linear-gradient(to bottom right, #3789dd 0%,
+   #b82fd4 100%);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 8px;
+  height: 40px;
+  width: 200px;
+  transition: all 0.25s ease-in;
+}
+.reset-form {
+  text-align: center;
+  border: none;
+  font-family: 'Catamaran';
+  color: #fff;
+  background: linear-gradient(to bottom left, #3789dd 0%,
+   #b82fd4 100%);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 8px;
+  height: 40px;
+  width: 200px;
+  transition: all 0.2s ease-in;
+}
+.reset-form:hover{
+  background: linear-gradient(to bottom left, #569de6 0%,
+   #cf5be7 100%);
+}
+.send-form:hover{
+  background: linear-gradient(to bottom left, #569de6 0%,
+   #cf5be7 100%);
+}
+
+
+.container-social-media{
+  justify-content: center;
+  padding: 26px 26px 26px 26px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  align-items: center;
+  box-sizing: border-box;
+}
+.sign-as{
+  margin-top: 21px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Catamaran';
+  color: #111;
+}
+
+.btn-social{
+  width: 100%;
+}
+.btn-facebook{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #3e77aa;
+  height: 48px;
+  font-size: 17px;
+  background-color: #f1f1f1;
+  box-shadow: inset 0 0 0 1px #ebebeb;
+  transition: all 0.2s ease-in;
+}
+.btn-facebook:hover{
+  background-color: #ededed;
+  box-shadow: inset 0 1px 2px 1px #cfcccc;
+}
+.btn-facebook:active{
+  border: 1px solid red;
+}
+.btn-facebook:focus {
+  color: #5e49b1;
+  border-bottom: 1px solid #3a6fc9;
+}
+
+.btn{
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  transition: all 0.2s ease-in;
+}
+button {
+  padding: 1px 6px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.btn img:hover{
+  color: #2b6da8;
+}
+.container-social-media {
+  width: 100%;
+  padding: 10px 15px 15px 20px;
+}
