@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style-form2.css">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <title>Form2-Pink</title>
+</head>
+<body>
+  <header>
+    <a class="header-brand">Forms</a>
+    <nav>
+      <ul>
+        <li><a href="questionnaire.html">Questionnaire</a></li>
+        <li><a href="form1-grey.html">Form1-Grey</a></li>
+        <li><a href="form2-pink.html">Form2-Pink</a></li>
+        <li><a href="form3-flower.html">Form3-Flower</a></li>
+        <li><a href="form4-invintation.html">Form4-Invintation</a></li>
+        <li><a href="form5-log-in.html">Form5-Log-In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <div class="content">
+        <div class="border-form">
+
+          <form action="form-succes.html">
+            <div class="content__box">
+              <div class="content__elem">
+                <label for="">Ваше ім'я</label>
+                <input list="name" type="text" maxlength="32" minlength="2" name="first_name" pattern="[A-Za-z]{1,32}" required valid>
+                <datalist id="name">
+                  <option value="Andriy"></option>
+                </datalist>
+              </div>
+
+              <div class="content__elem">
+                <label for="">Ваш email</label>
+                <input type="email" minlength="10" maxlength="40" required>
+              </div>
+
+              <div class="content__elem">
+                <label for="">Ваше повідомлення</label>
+                <div class="textarea">
+                  <textarea name="name" rows="5" cols="41" maxlength="150" minlength="5" required>
+                  </textarea>
+                </div>
+              </div>
+              <div class="content__elem">
+                <div class="send-btn">
+                  <button>Відправити повідомлення</button>
+                </div>
+              </div>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>
